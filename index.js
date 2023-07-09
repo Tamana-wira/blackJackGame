@@ -78,4 +78,35 @@
 //         console.log("here you are")
 //     }
 
+//...............................Object................................................................
 
+// let title=document.getElementById("player");
+
+
+// let player={
+//     Name:"Tamana",
+//     Chipset:10
+// }
+
+// title.textContent=player.Name+" "+player.Chipset;
+// console.log(title);
+
+
+// let onbi={
+//     isCalm:true,
+//     castleName:"DarulAman",
+//     rooms:5,
+//     roomType:["kingsRoom","Queen Room","ordinary"]
+
+// }
+// console.log(onbi.roomType[2])
+//.................................Practice................................
+let person={
+    name:"Tamana",
+    age:28,
+    country:"Afghanistan"
+}
+let logData=()=>{
+    console.log(person.name +" "+person.age+" "+"and"+"she live in"+person.country)
+}
+logData();
