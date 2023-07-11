@@ -205,36 +205,36 @@
 // })
 //.........................Rendering ...................................
 
-let myLeads=["www.google.com","ww.abc.com","www.yahoo.com"];
+// let myLeads=["www.google.com","ww.abc.com","www.yahoo.com"];
 
-let inputEl=document.getElementById("inputEl")
-// console.log(inputEl)
-let btnEl=document.getElementById("input-btn");
-let ulEl=document.getElementById("ul-El");
+// let inputEl=document.getElementById("inputEl")
+// // console.log(inputEl)
+// let btnEl=document.getElementById("input-btn");
+// let ulEl=document.getElementById("ul-El");
 
-let containerEl=document.getElementById("container")
+// let containerEl=document.getElementById("container")
 
 
 
 
 //run for loops when page is rendered
-for(let i=0;i<myLeads.length;i++){
-    console.log(myLeads[i])
-   // ulEl.innerHTML+="<li>"+myLeads[i]+"</li>"+ "       "
-    // console.log(myLeads[i])
+// for(let i=0;i<myLeads.length;i++){
+//     console.log(myLeads[i])
+//    // ulEl.innerHTML+="<li>"+myLeads[i]+"</li>"+ "       "
+//     // console.log(myLeads[i])
 
-    let listEl=document.createElement("li")
-    listEl.innerHTML=myLeads[i]
-    containerEl.appendChild(listEl)
-}
+//     let listEl=document.createElement("li")
+//     listEl.innerHTML=myLeads[i]
+//     containerEl.appendChild(listEl)
+// }
 
 
 
 //when changin input value..
 
-inputEl.addEventListener("change", (e)=>{
-    console.log(e.target.value)
-})
+// inputEl.addEventListener("change", (e)=>{
+//     console.log(e.target.value)
+// })
 
 //second way of change event listner
 // inputEl.onchange= (e)=>{
@@ -243,17 +243,17 @@ inputEl.addEventListener("change", (e)=>{
 
 
 //when click on button
-btnEl.addEventListener("click", ()=>{
-    myLeads.push(inputEl.value)
-    //adding li elements to conainer
-    let listEl=document.createElement("li")
-    listEl.innerHTML=inputEl.value
-    containerEl.appendChild(listEl)
+// btnEl.addEventListener("click", ()=>{
+//     myLeads.push(inputEl.value)
+//     //adding li elements to conainer
+//     let listEl=document.createElement("li")
+//     listEl.innerHTML=inputEl.value
+//     containerEl.appendChild(listEl)
 
-    inputEl.value = ""
+//     inputEl.value = ""
 
-    console.log(myLeads)
-})
+//     console.log(myLeads)
+// })
 
 
 // containerEl.innerHTML="<button id='but-btn' Onclick='Buy()'> Buy</button>"+" "
@@ -261,3 +261,64 @@ btnEl.addEventListener("click", ()=>{
 // let Buy=()=>{
 //     containerEl.innerHTML+="<p>it's paragraph</p>"
 // }
+// let container=document.getElementById("container");
+// // console.log(container)
+// let btnE=document.getElementById("input-btn");
+// // console.log(btnE)
+// let input= document.getElementById("inputEl")
+// // console.log(input)
+// container.innerHTML="<button Ocnclick='clicked()'>click me</button>"
+// // console.log(container.innerHTML);
+// function clicked(){
+    
+//     container.innerHTML="<p>Thank you</p>"
+    
+// }
+//.......................................TEMPLATE STRING................
+
+// const resp="jaes";
+// // const email=`hey ${resp} how are you`;
+// // console.log(email)
+
+// let sender="Tamana";
+// const email=`Hey ${resp}
+//             how it's going? cheers
+//              ${sender}`
+// console.log(email)
+
+//.........................................ADDING DYNAMIC PARAMETERS TO FUNCTIONS.........................
+
+// let welcomeEl=document.getElementById("welcomeEl");
+
+// let myfuc=(greeting,name)=>{
+//     welcomeEl.textContent=`${greeting} ${name}`;
+// }
+// myfuc("hello ","sadaf")
+
+// function add(Numberone,NumberTwo){
+//    return NumberTwo + Numberone
+
+// }
+// console.log(add(9,102))
+// console.log(add(2,4))
+
+// function getFirstArr (myarray){
+        
+//         // for(i=0;i<myarray.length; i++)
+//         return myarray[0];
+// }
+// console.log(getFirstArr([1,2,3]));
+// console.log(defineit)
+//............................................
+
+let saveEl=document.getElementById("save-btn");
+
+const tabs=[
+    {url:"fb.com"}
+]
+
+saveEl.addEventListener("click", (myObj)=>{
+    console.log(tabs[0].url)
+
+})
+
